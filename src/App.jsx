@@ -1,8 +1,20 @@
+import CustomTable from './components/CustomTable'
+import columns from './data/columns'
+import rows from './data/rows'
+
 function App() {
+  const tableColumns = columns
+  const tableRows = rows
+
   return (
     <>
-      <h3>Table</h3>
-      <hr />
+      <br />
+      <div className='container'>
+        <CustomTable
+          tableColumns={tableColumns}
+          tableRows={tableRows}
+        />
+      </div>
     </>
   )
 }
