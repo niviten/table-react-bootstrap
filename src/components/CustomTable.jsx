@@ -20,7 +20,7 @@ function CustomTable({ tableDetails, tableRows, tableColumns }) {
         <table className='table table-stripped table-hover table-bordered'>
           <thead className='table-light'>
             <tr>
-              <td colSpan={5}>
+              <td colSpan={tableColumns.length}>
                 <button
                   className='btn btn-light'
                   data-bs-toggle='tooltip'
