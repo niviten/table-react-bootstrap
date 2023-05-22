@@ -1,6 +1,11 @@
+import columns from './columns'
+
 const rows = []
 
 function addRow(...cells) {
+  while (cells.length < columns.length) {
+    cells.push('asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf')
+  }
   rows.push(cells)
 }
 
